@@ -1,0 +1,32 @@
+Ido Folkman C++ Project Plan:
+
+Data Structures: due - 18 july - done
+
+Node: Represents a node in the graph.
+Graph: Represents the graph itself, containing nodes and edges.
+Edge: Represents a connection between two nodes with an associated weight.
+
+
+JSON Parsing: due - 25 july - done
+
+CSV Parser: Reads the graph data from a CSV file and populates the graph data structure.
+
+
+Graph Algorithms: due - 1 august
+
+Shortest Path Algorithm: Implements an algorithm to find the shortest path between two nodes.
+
+
+Input/Output Handling: due - 8 august
+
+User Input: Takes input from the user for the source and destination nodes.
+Output: Displays the shortest path and its cost.
+
+
+
+Main Program Flow: due - 1 September
+
+Initialize the graph from the CSV file.
+Accept user input for the nodes.
+Compute the shortest path.
+Display the result.

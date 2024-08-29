@@ -4,7 +4,7 @@
 #include <fstream>
 #include <sstream>
 
-#include "../Random.h"
+#include "../Random/Random.h"
 
 using namespace std;
 

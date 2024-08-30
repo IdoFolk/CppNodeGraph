@@ -14,13 +14,19 @@ int main(int argc, char* argv[])
     Graph* graph = CSVParser::CreateGraphFromCSV(csvData);
 
     graph->PrintGraph();
-    int selectedStartNode = 0;
-    int selectedEndNode = 0;
-    std::cout << "Enter the starting node" << endl;
-    std::cin >> selectedStartNode;
-    std::cout << "Enter the ending node" << endl;
-    std::cin >> selectedEndNode;
-    cout << "Start Node: " << selectedStartNode << " End Node: " << selectedEndNode << "\n";
-    PathFinding::GetShortestPath(graph, selectedStartNode, selectedEndNode);
+    
+    while (true)
+    {
+        int selectedStartNode = 0;
+        int selectedEndNode = 0;
+        cout << "Enter the starting node" << endl;
+        cin >> selectedStartNode;
+        cout << "Enter the ending node" << endl;
+        cin >> selectedEndNode;
+        cout << "Start Node: " << selectedStartNode << " End Node: " << selectedEndNode << "\n";
+        PathFinding::GetShortestPath(graph, selectedStartNode, selectedEndNode);
+        cout << "\n";
+    }
+    
     return 0;
 }

@@ -9,7 +9,9 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    const std::string filename = "CSV graph.csv";
+    cout << "Enter the name of the CSV graph file with no spaces, including .csv" << std::endl;
+    string filename;
+    cin >> filename;
     auto csvData = CSVParser::parseCSV(filename);
     Graph* graph = CSVParser::CreateGraphFromCSV(csvData);
 

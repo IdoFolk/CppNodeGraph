@@ -9,4 +9,6 @@ class CSVParser
 public:
     static vector<vector<string>> parseCSV(const string& filename);
     static Graph* CreateGraphFromCSV(const vector<vector<string>>& filename);
+private:
+    static bool isNumber(const string& str);
 };

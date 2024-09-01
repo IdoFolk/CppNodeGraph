@@ -9,6 +9,13 @@ using namespace std;
 
 void PathFinding::GetShortestPath(Graph* graph, int startNode, int goalNode)
 {
+    // If one of the nodes is not in the graph.
+    if(graph->FindNode(startNode) == nullptr || graph->FindNode(goalNode) == nullptr)
+    {
+        cout << "One of the nodes is not in the graph." << endl;
+        return;
+    }
+        
     // Create a priority queue to store the nodes to be visited.
     priority_queue<Node*, vector<Node*>, greater<>> minHeap;
 
